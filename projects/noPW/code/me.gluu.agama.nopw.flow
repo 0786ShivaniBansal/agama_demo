@@ -1,11 +1,12 @@
 Flow me.gluu.agama.nopw
      Basepath ""
-creds = RRF "uid-form.ftlh" 
-user = Call co.sample#searchAndAdd "uid" creds.username ""
-isBob = Call co.PersonChecker#isBob creds.username
-When isBob is true
-     message = RRF "stepTwo.ftlh" creds
-     Log "@error Alert: Bob tried to login"
-     Finish false
-Log "@info Not bob... it's: " creds.username 
-Finish creds.username
+authService = Call io.jans.as.server.service.AuthenticationService#class 
+cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+authResult = {}
+Repeat 3 times max
+     creds = RRF "login.ftlh" authResult
+     authResult.success = Call cdiUtil authenticate creds.username creds.password
+     authResult.uid = creds.username
+     When authResult.success is true
+          Finish authResult.uid
+Finish false
