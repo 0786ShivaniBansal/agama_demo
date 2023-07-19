@@ -16,7 +16,8 @@
 				"position": {
 					"x": 856.9507006430154,
 					"y": 23.97954804792107
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
@@ -63,7 +64,8 @@
 					"arguments": "creds.username",
 					"displayName": "fraud_detected",
 					"nodeIcon": "material-symbols:code"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -108,7 +110,8 @@
 					"returnVariable": "creds.username",
 					"displayName": "Return username",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -153,7 +156,8 @@
 					"returnVariable": "false",
 					"displayName": "Error",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
 			"positionAbsolute": {
 				"x": 1654.6259360578358,
@@ -198,7 +202,8 @@
 					"logMessage": "\"Alert: Bob tried to login\"",
 					"displayName": "Log Bob Attempt",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -243,7 +248,8 @@
 					"logMessage": "\"Not bob... it's: \" creds.username ",
 					"displayName": "Log Username",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -292,7 +298,8 @@
 					"templatePath": "stepTwo.ftlh",
 					"displayName": "Step Two",
 					"nodeIcon": "ph:globe-simple"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -340,7 +347,8 @@
 					"variableField": "isBob",
 					"conditionInputField": "is",
 					"valueField": "true"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -387,7 +395,8 @@
 					"arguments": "\"uid\" creds.username \"\"",
 					"displayName": "Search and Add",
 					"nodeIcon": "material-symbols:code"
-				}
+				},
+				"skake": false
 			},
 			"positionAbsolute": {
 				"x": 449.7461387773569,
@@ -433,7 +442,8 @@
 					"templatePath": "uid-form.ftlh",
 					"displayName": "UID Form",
 					"nodeIcon": "ph:globe-simple"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -493,7 +503,8 @@
 					"nodeIcon": "material-symbols:line-start-square"
 				},
 				"inRepeatBlock": false,
-				"whenCondition": ""
+				"whenCondition": "",
+				"skake": false
 			},
 			"position": {
 				"x": 32,
@@ -710,8 +721,8 @@
 		}
 	],
 	"viewport": {
-		"x": -340.99821186311874,
-		"y": 154.66000294127116,
-		"zoom": 0.6948550375341973
+		"x": 10,
+		"y": 15,
+		"zoom": 1
 	}
 }
