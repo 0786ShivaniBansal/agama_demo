@@ -9,5 +9,23 @@
         "githubUri": "https://github.com/nynymike/agama_demo",
         "license": "MIT",
         "lastUpdated": "1681771041109"
+    },
+    "username_password_authentication": {
+        "projectName": "username_password_authentication",
+        "description": "Username-password based authentication flow",
+        "type": "community",
+        "author": "0786ShivaniBansal",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/0786ShivaniBansal/agama_demo",
+        "githubUri": "https://github.com/0786ShivaniBansal/agama_demo",
+        "license": "MIT",
+        "lastUpdated": "1690442735523",
+        "tags": [
+            "authentication",
+            "jans",
+            "openid-connect",
+            "social-logins",
+            "authorization"
+        ]
     }
 }
